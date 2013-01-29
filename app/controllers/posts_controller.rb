@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @comments = @post.comments
-    respond_with post: @post, comments: @comments
+    respond_with @post, :include => :comments
   end
 
   def new
