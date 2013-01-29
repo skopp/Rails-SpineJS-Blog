@@ -1,0 +1,14 @@
+<h1>Show Post</h1>
+
+<a data-type="edit">Edit</a> <a data-type="back">Back</a>
+
+<p>Title: <%= @title %></p>
+<p>Body: <%= @body %></p>
+
+<h3>Comments:</h4>
+<% for comment in @comments().all(): %>
+  <div class="comment">
+    <p><strong><%= comment.author %>:</strong></p>
+    <p><%= comment.body %></p>
+  </div>
+<% end %>

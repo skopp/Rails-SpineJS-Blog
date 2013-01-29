@@ -1,0 +1,27 @@
+<h1>New Comment</h1>
+
+<a data-type="back">Back</a>
+
+<form>
+  
+  <label>
+    <span>Author</span>
+    <input 
+      type="text" name="author" 
+      value="<%= @author %>" required
+ autofocus>
+    <br />
+  </label>
+  
+  <label>
+    <span>Body</span>
+    <input 
+      type="text" name="body" 
+      value="<%= @body %>" required
+>
+    <br />
+  </label>
+  
+  <button>Create</button>
+
+</form>

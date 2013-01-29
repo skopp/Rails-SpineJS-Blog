@@ -1,0 +1,6 @@
+<h1>Show Comment</h1>
+
+<a data-type="edit">Edit</a> <a data-type="back">Back</a>
+
+<p>Author: <%= @author %></p>
+<p>Body: <%= @body %></p>
